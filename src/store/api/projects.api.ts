@@ -6,7 +6,7 @@ import {
 
 import { api } from './api';
 
-export const PROJECTS_API_URL = '/Projects';
+export const PROJECTS_API_URL = '/projects';
 
 export const projectsApi = api.injectEndpoints({
   endpoints: (builder) => ({

@@ -1,0 +1,68 @@
+{
+  "projects": [
+    {
+      "id": "3",
+      "name": "Project three",
+      "secretKey": "234253654sa4dsfsd547sdf",
+      "wallets": [],
+      "createdAt": "2023-03-12T10:00:08.279Z"
+    },
+    {
+      "id": "4",
+      "name": "Project 4",
+      "secretKey": "hgjgdfg343sd547sdf",
+      "wallets": [],
+      "createdAt": "2023-02-17T14:15:08.279Z"
+    },
+    {
+	  "id": "4",
+	  "name": "Третий проект",
+	  "secretKey": "hgjgdfg343sd547sdf",
+	  "wallets": [],
+	  "createdAt": "2023-02-10T11:00:08.279Z"
+	  }
+  ],
+  "wallets": [
+    {
+      "id": "1",
+      "name": "Первый кошелек",
+      "address": "asd675sa4dsfsd547sdf",
+      "blockChain": "Etherium",
+      "projects": [],
+      "createdAt": "2023-04-26T13:15:08.279Z"
+    },
+    {
+      "id": "2",
+      "name": "Второй кошелек",
+      "address": "24675sa4dsfsd547sdf",
+      "blockChain": "Bitcoin",
+      "projects": [],
+      "createdAt": "2023-04-26T12:15:08.279Z"
+    },
+    {
+      "id": "3",
+      "name": "Еще один",
+      "address": "234253654sa4dsfsd547sdf",
+      "blockChain": "Etherium",
+      "projects": [],
+      "createdAt": "2023-03-12T10:00:08.279Z"
+    },
+    {
+      "id": "4",
+      "name": "Предпоследний",
+      "address": "hgjgdfg343sd547sdf",
+      "blockChain": "Etherium",
+      "projects": [],
+      "createdAt": "2023-02-17T14:15:08.279Z"
+    },
+    {
+      "id": "4",
+      "name": "Много денег",
+      "address": "hgjgdfg343sd547sdf",
+      "blockChain": "Bitcoin",
+      "projects": [],
+      "createdAt": "2022-02-10T14:00:08.279Z"
+    }
+  ],
+  "blockChains": ["Tron", "Ethereum", "Bitcoin", "Garantex"]
+}

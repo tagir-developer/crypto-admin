@@ -27,13 +27,11 @@ const DeleteWalletModal: FC<IMainModal & PropsWithChildren> = ({
     deleteWallet(activeWallet.id)
       .unwrap()
       .then((res) => {
-        console.log('SUCCESSFUL CREATE PROJECT RESPONSE', res);
         openNotification(NotificationTypes.SUCCESS, 'Кошелек успешно удален');
 
         handleCancel();
       })
       .catch((err) => {
-        console.log('ERROR --- PROJECT DELETE DATA ---', err);
         openNotification(NotificationTypes.ERROR, 'Не удалось удалить кошелек');
       });
   };

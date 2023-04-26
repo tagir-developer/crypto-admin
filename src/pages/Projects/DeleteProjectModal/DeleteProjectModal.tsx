@@ -28,15 +28,11 @@ const DeleteProjectModal: FC<IDeleteProjectModal & PropsWithChildren> = ({
     deleteProjectById(activeProject.id)
       .unwrap()
       .then((data) => {
-        console.log('SUCCESS --- PROJECT DELETE DATA ---', data);
-
         openNotification(NotificationTypes.SUCCESS, 'Проект успешно удален');
 
         handleSuccessfulAction();
       })
       .catch((err) => {
-        console.log('ERROR --- PROJECT DELETE DATA ---', err);
-
         openNotification(NotificationTypes.ERROR, 'Не удалось удалить проект');
       });
   };

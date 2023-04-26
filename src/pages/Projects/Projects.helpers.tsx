@@ -32,28 +32,10 @@ export const getProjectsTableColumns = (
   {
     title: 'Дата создания',
     dataIndex: 'createdAt',
-    sorter: (a, b): number => {
-      if (a.createdAt < b.createdAt) {
-        return -1;
-      }
-      if (a.createdAt > b.createdAt) {
-        return 1;
-      }
-      return 0;
-    },
   },
   {
     title: 'Название проекта',
     dataIndex: 'name',
-    sorter: (a, b): number => {
-      if (a.name < b.name) {
-        return -1;
-      }
-      if (a.name > b.name) {
-        return 1;
-      }
-      return 0;
-    },
   },
   {
     title: 'Кошельки',

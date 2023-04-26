@@ -28,7 +28,6 @@ const CreateWalletModal: FC<IMainModal & PropsWithChildren> = ({
   const [addWallet, { isLoading }] = walletsApi.useCreateWalletMutation();
 
   const handleModalCancel = (): void => {
-    console.log('close wallet modal');
     form.resetFields();
     handleCancel();
   };

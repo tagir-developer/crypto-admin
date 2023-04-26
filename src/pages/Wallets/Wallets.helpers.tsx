@@ -33,42 +33,15 @@ export const getWalletsTableColumns = (
   {
     title: 'Дата создания',
     dataIndex: 'createdAt',
-    sorter: (a, b): number => {
-      if (a.createdAt < b.createdAt) {
-        return -1;
-      }
-      if (a.createdAt > b.createdAt) {
-        return 1;
-      }
-      return 0;
-    },
   },
 
   {
     title: 'Кошелек',
     dataIndex: 'name',
-    sorter: (a, b): number => {
-      if (a.name < b.name) {
-        return -1;
-      }
-      if (a.name > b.name) {
-        return 1;
-      }
-      return 0;
-    },
   },
   {
     title: 'Сеть',
     dataIndex: 'blockChain',
-    sorter: (a, b): number => {
-      if (a.blockChain < b.blockChain) {
-        return -1;
-      }
-      if (a.blockChain > b.blockChain) {
-        return 1;
-      }
-      return 0;
-    },
   },
   {
     title: 'Баланс',

@@ -7,8 +7,8 @@ import {
 
 import { api } from './api';
 
-export const WALLET_API_URL = '/Wallets';
-export const BLOCKCHAINS_URL = '/BlockChains';
+export const WALLET_API_URL = '/wallets';
+export const BLOCKCHAINS_URL = '/blockChains';
 
 export const walletsApi = api.injectEndpoints({
   endpoints: (builder) => ({

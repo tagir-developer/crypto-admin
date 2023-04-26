@@ -11,7 +11,7 @@ import { IAccount } from 'common/interfaces';
 import { setAccessToken, setAuthLoading } from 'store/reducers/common.slice';
 import { TypeRootState } from 'store/store';
 
-export const API_URL = `${process.env.REACT_APP_API_URL}/`;
+export const API_URL = process.env.REACT_APP_API_URL;
 
 const mutex = new Mutex();
 
@@ -38,7 +38,6 @@ const baseQueryWithReAuth: BaseQueryFn<
 
   let result = await baseQuery(args, api, extraOptions);
 
-  // TODO: надо проанализировать result и переписать условие (указав правильный путь к полю с 401 кодом), чтобы условие отрабатывало
   if (result.error && result.error.status === 401) {
     if (!mutex.isLocked()) {
       const release = await mutex.acquire();
@@ -62,9 +61,6 @@ const baseQueryWithReAuth: BaseQueryFn<
 
           result = await baseQuery(args, api, extraOptions);
         } else {
-          // api.dispatch(thunkLogout(true));
-
-          // TODO: здесь пробуем сделать логаут Если просрочилась кука и не получилось обновить токен
           const logoutResult = await baseQuery(
             { url: '/logout', method: 'GET' },
             api,
@@ -95,10 +91,4 @@ export const api = createApi({
   tagTypes: ['Projects', 'Wallets'],
   baseQuery: baseQueryWithReAuth,
   endpoints: (builder) => ({}),
-  // endpoints: (builder) => ({
-  //   getProfile: builder.query<TypeUnknown, TypeUnknown>({
-  //     query: () => '/profile',
-  //     // providesTags: ['Profile'],
-  //   }),
-  // }),
 });

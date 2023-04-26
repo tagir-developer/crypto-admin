@@ -91,7 +91,7 @@ export const getBlockChainNumberByName = (value: BlockChains): number => {
 export const convertSelectBlockChains = (
   blockChains: BlockChains[],
 ): ISelectOption[] => {
-  return blockChains.map((item) => ({
+  return blockChains?.map((item) => ({
     value: getBlockChainNumberByName(item),
     label: item,
   }));
