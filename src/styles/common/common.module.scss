@@ -1,0 +1,47 @@
+.segmented-tabs {
+  width: fit-content;
+  font-weight: 700;
+
+  margin-bottom: 44px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+
+  label {
+    width: 118px;
+
+    @media (min-width: 768px) {
+      width: 134px;
+    }
+  }
+}
+
+.link {
+  color: #2196f3;
+}
+
+.message {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #1c1c1e;
+
+  margin-bottom: 35px;
+}
+
+.buttons-group {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,262 @@
+$form-horizontal-gap: 40px;
+
+.table-filters {
+  width: 100%;
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-bottom: 20px;
+
+    gap: 20px;
+
+    &-reverse {
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__dropdown {
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+
+    color: var(--blue-gray);
+
+    gap: 10px;
+  }
+
+  &__dropdown-link {
+    width: 200px;
+    height: var(--button-height);
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    background: #ffffff;
+
+    border-radius: 6px;
+    box-sizing: border-box;
+
+    padding: 0px 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    & > span {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1c1c1e;
+
+      padding-left: 10px;
+    }
+  }
+
+  &__dropdown-arrow-icon {
+    margin-top: 3px;
+    margin-left: auto;
+
+    transition: all 0.1s linear;
+
+    &_turned {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__search-btn {
+    margin-left: 20px;
+
+    &_hide {
+      display: none;
+    }
+  }
+
+  &__search-icon {
+    width: 17px;
+    margin-right: 13px;
+  }
+
+  &__export-csv-btn {
+    display: flex;
+    align-items: center;
+    min-width: 180px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    margin-left: 60px;
+
+    &_disabled {
+      cursor: not-allowed;
+      color: #c8d0e1;
+
+      & > svg {
+        opacity: 0.5;
+      }
+
+      &:hover > span {
+        color: #c8d0e1;
+      }
+    }
+
+    &:hover {
+      color: #45af8e;
+    }
+  }
+
+  &__export-csv-icon {
+    width: 26px;
+
+    margin-right: 17px;
+  }
+
+  &__export-csv-text {
+    text-align: left;
+  }
+}
+
+.overlay {
+  width: 200px;
+
+  background-color: #ffffff;
+  border: 1px solid #c8d0e1;
+  box-shadow: 3px 3px 9px rgba($color: #000000, $alpha: 0.08);
+  border-radius: 4px;
+
+  padding: 3px 15px 5px 15px;
+
+  & > div > div > label {
+    border-bottom: 0.75px solid #dedede;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+
+    color: #44475c;
+
+    padding: 10px 0;
+  }
+
+  & > div > div > label:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.filters-form {
+  display: flex;
+
+  gap: 15px 10px;
+
+  border-top: 1px solid #f0f0f0;
+
+  padding-top: 10px;
+  margin-bottom: 60px;
+
+  &__empty {
+    width: 15px;
+  }
+
+  &_hide {
+    display: none;
+  }
+
+  &_modal {
+    .filters-form {
+      &__form {
+        grid-template-columns: 440px 440px;
+        gap: 15px 30px;
+      }
+
+      &__delete-button {
+        align-self: flex-end;
+
+        margin-bottom: 13px;
+      }
+    }
+  }
+
+  &__form-container {
+    // max-width: 980px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex: 1;
+
+    gap: 15px $form-horizontal-gap;
+  }
+
+  &__item {
+    width: calc((100% - #{$form-horizontal-gap} * 2) / 3);
+    min-width: 400px;
+    display: flex;
+
+    @media (max-width: 1200px) {
+      flex: 1;
+    }
+  }
+
+  &__item-inner {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+
+  &__delete-button {
+    height: 17px;
+
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    padding: 0;
+  }
+
+  &__delete-filter-icon {
+    width: 16px;
+
+    font-size: 17px !important;
+
+    path {
+      fill: #44475c;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      path {
+        fill: #f25769;
+
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  &__search-btn {
+    &_hide {
+      display: none;
+    }
+  }
+}
+
+.clear-button {
+  border-width: 2px;
+}

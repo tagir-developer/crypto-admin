@@ -1,0 +1,39 @@
+.date-filter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  flex: 1;
+
+  &__label {
+    font-size: 14px;
+
+    color: #8a8eaf;
+
+    margin-bottom: 7px;
+  }
+
+  &__inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+  }
+
+  &__form-item {
+    flex: 1;
+
+    margin: 0;
+  }
+
+  &__date-picker {
+    width: 100%;
+    min-height: 38px;
+
+    border-radius: 6px;
+  }
+}

@@ -1,0 +1,29 @@
+:root {
+  //fonts
+  --main-font: 'Inter';
+  --secondary-font: 'Roboto';
+
+  //sizes
+  --filter-item-height: 36px;
+  --font-size: 14px;
+  --button-height: 48px;
+
+  //colors
+  --primary: #6941c6;
+  --primary-hover: #5b36b1;
+
+  --secondary: #667085;
+
+  --danger: #d52929;
+  --danger-hover: #b51c1c;
+  --danger-hover-background: #ffe2e2;
+  --warning: #e9b60f;
+
+  --main-background: #f9fafb;
+  --sidebar-text-color: #fff;
+
+  --table-text: #1c1c1e;
+  --blue-gray: #525f80;
+  --table-header: #e0e9f3;
+  --table-hover: #ded3ff;
+}

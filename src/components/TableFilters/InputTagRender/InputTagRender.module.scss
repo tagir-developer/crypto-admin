@@ -1,0 +1,108 @@
+.input-tag-render {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+
+  flex: 1;
+
+  div[class*='ant-select'] {
+    display: flex;
+    align-items: center;
+
+    gap: 5px 0px;
+
+    width: 100%;
+
+    border-radius: 6px;
+  }
+
+  &__input-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+  }
+
+  &__label {
+    font-size: 14px;
+    color: #8a8eaf;
+
+    margin-bottom: 7px;
+  }
+
+  &__inner {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+
+    background: #ffffff;
+    border: 1px solid #c8d0e1;
+
+    padding: 5px;
+  }
+
+  &__form-item {
+    height: 25px;
+
+    display: flex;
+
+    margin-bottom: 0;
+
+    div {
+      height: 22px;
+      display: block;
+    }
+  }
+
+  &__input {
+    height: 22px;
+    max-width: 110px;
+
+    background: var(--table-header);
+    border-radius: 4px;
+    box-shadow: none;
+    outline: none;
+  }
+
+  &__dropdown-menu {
+    flex: 1;
+
+    border: 1px solid #dedede;
+    border-radius: 4px;
+  }
+
+  &__delete-all-icon {
+    position: absolute;
+    right: 5px;
+
+    width: 18px;
+    height: 20px;
+
+    cursor: pointer;
+
+    path {
+      fill: #8a8eaf;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      path {
+        fill: #f25769;
+      }
+    }
+
+    &_hide {
+      display: none;
+    }
+  }
+
+  &__expand-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,41 @@
+.wrapper {
+  flex: 1;
+  width: 100%;
+
+  .buttons-container {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+  }
+
+  .table {
+    tbody {
+      tr {
+        td {
+          white-space: nowrap;
+        }
+      }
+    }
+    // tbody {
+    //   tr {
+    //     td {
+    //       &:nth-child(3),
+    //       &:nth-child(4) {
+    //         white-space: nowrap;
+    //       }
+    //     }
+    //   }
+    // }
+  }
+
+  .create-button {
+    margin-bottom: 30px;
+  }
+}
+
+.edit-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

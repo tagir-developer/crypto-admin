@@ -1,0 +1,54 @@
+.modal {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  height: 300px;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .icon {
+      margin-bottom: 10px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .description {
+      text-align: center;
+      font-size: 15px;
+      color: var(--secondary);
+
+      margin-bottom: 30px;
+    }
+
+    .buttons-container {
+      width: 100%;
+
+      .buttons-group {
+        display: flex;
+
+        gap: 16px;
+
+        button {
+          width: 100%;
+          flex: 1;
+        }
+
+        @media (min-width: 768px) {
+          gap: 24px;
+          justify-content: space-between;
+
+          button {
+            width: unset;
+            flex: 1 1 150px;
+          }
+        }
+      }
+    }
+  }
+}

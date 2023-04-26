@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 30px;
+
+  svg {
+    color: var(--primary)
+  }
+}
+
+.breadcrumbs {
+
+  & > ol {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #1C1C1E;
+  line-height: 32px;
+
+    & > li:last-child {
+      color: #424247;
+    }
+  }
+}
+
+.previous-page {
+  cursor: pointer;
+}
